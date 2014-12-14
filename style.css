@@ -1,0 +1,28 @@
+.stage {
+    background: #ccc;
+    border: 5px solid #000;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    min-height: 100px;
+}
+
+.input {
+    display: none;
+}
+
+.background {
+    display: inline-block;
+}
+
+.unsupported {
+    display: none;
+}
+
+.no-canvas .unsupported {
+    display: block;
+}
+
+.no-canvas .controls {
+    opacity: 0.3;
+}

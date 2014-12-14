@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# v0.5.3
+
+NETWORK:
+*
+
+CACHE:
+js/jquery.min.js
+js/LZWEncoder.js
+js/NeuQuant.js
+js/GIFEncoder.js
+js/b64.js
+js/spectrum/spectrum.js
+js/spectrum/spectrum.css

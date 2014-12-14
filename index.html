@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html manifest="/manifest.appcache">
+<head>
+    <meta charset="utf-8">
+    <title>GIFidget.com ~ Create GIFs of stuff that shake!</title>
+
+    <script type="text/JavaScript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <script type="text/javascript" src="js/LZWEncoder.js"></script>
+    <script type="text/javascript" src="js/NeuQuant.js"></script>
+    <script type="text/javascript" src="js/GIFEncoder.js"></script>
+    <script type="text/javascript" src="js/b64.js"></script>
+
+    <script type="text/javascript" src="js/spectrum/spectrum.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" href="js/spectrum/spectrum.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="controls">
+    <input class="foreground" type="file">
+
+    <fieldset class="background">
+    <legend>Gradient colors</legend>
+    <input name="background-color-1" class="background" type="color" value="#D066DE">
+    <input name="background-color-2" class="background" type="color" value="#8FFF26">
+    </fieldset>
+
+    <input class="dimension" type="number" name="width" placeholder="Image width">
+    <input class="dimension" type="number" name="height" placeholder="Image height">
+
+    <input class="delay" type="number" name="delay" placeholder="Animation delay" default="50">
+
+    <button class="create">Create</button>
+</div>
+<div class="stage input">
+    <canvas width="700" height="650" id="bitmap">
+    </canvas>
+</div>
+
+<div class="stage output">
+    <div class="unsupported">
+        <p>It appears your browser does not support HTML5's &lt;canvas&gt; element.</p>
+        <p>Please upgrade to <a target="_blank" rel="external" href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> or <a target="_blank" rel="external" href="https://www.google.com/chrome">Google Chrome</a> and try again.</p>
+    </div>
+</div>
+
+<footer>
+    <a target="_blank" href="http://JoeAnzalone.com">Web design and development by Joe Anzalone</a>
+    Inspired by <a target="_blank" href="http://shakingfoodgifs.tumblr.com">shakingfoodgifs</a>
+</footer>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24988957-12']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</body>
+</html>
+<!--
+                       88
+                       88
+                       88
+                       88   ,adPPYba,    ,adPPYba,
+                       88  a8"     "8a  a8P_____88
+                       88  8b       d8  8PP"""""""
+       db      88,   ,d88  "8a,   ,a8"  "8b,   ,aa    88
+      d88b      "Y8888P"    `"YbbdP"'    `"Ybbd8"'    88
+     d8'`8b                                           88
+    d8'  `8b      8b,dPPYba,   888888888  ,adPPYYba,  88   ,adPPYba,   8b,dPPYba,    ,adPPYba,
+   d8YaaaaY8b     88P'   `"8a       a8P"  ""     `Y8  88  a8"     "8a  88P'   `"8a  a8P_____88
+  d8""""""""8b    88       88    ,d8P'    ,adPPPPP88  88  8b       d8  88       88  8PP"""""""
+ d8'        `8b   88       88  ,d8"       88,    ,88  88  "8a,   ,a8"  88       88  "8b,   ,aa
+d8'          `8b  88       88  888888888  `"8bbdP"Y8  88   `"YbbdP"'   88       88   `"Ybbd8"'
+
+This has been a JoeAnzalone.com Production -->
